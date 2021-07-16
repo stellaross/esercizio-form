@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+
+
+    <form action="form.php" method="POST">
+        <h1>Pagamento</h1>
+        <h2>Informazioni di contatto</h2>
+        <section>
+          
+                <label for="email">Email:</label>
+                <input type="email" name="user_email" id="email">           
+                <label for="password">Password:</label>
+                <input type="password" name="user_password" id="password">           
+                <label for="name_and_surname">Nome e Cognome:</label>
+                <input type="text" name="user_name_surname" id="name_and_surname">            
+                <label for="birth">Data di nascita:</label>
+                <input type="date" name="user_birth" id="birth">           
+                <label for="telephone">Numero di telefono:</label>
+                <input type="tel" name="user_telephone_number" id="telephone">
+       
+        </section> 
+
+        <section>
+           
+                <h2>Piano dell'offerta</h2>
+                <select name="offers" id="offer_plan">
+                    <optgroup label="Free">
+                        <option value="Free">Free </option>
+                    </optgroup>
+                    <optgroup label="Pro">
+                        <option value="1.99€">1.99/mese</option>
+                        <option value="5.99€">5.99€/mese</option>
+                        <option value="11.99€">11.99€/mese</option>                   
+                    </optgroup>                    
+                </select>
+         
+                <input type="checkbox" name="piano_pro" id="piano_pro">
+                <label for="piano_pro">Piano Pro</label>
+          
+        </section>  
+        
+        <section>
+            <h2>Informazioni di pagamento</h2>
+           
+                <label for="number_credit_card">Numero Carta</label>
+                <input type="text" name="credit_card" id="number_credit_card">           
+                <label for="cvc">CVC</label>
+                <input type="text" name="cvc" id="cvc" >
+                <label for="expire_date">Data scadenza:</label>
+                <input type="date" name="expire_date_card" id="expire_date">        
+        </section> 
+
+        <section>
+            <h2>Indirizzo di fatturazione</h2>
+        
+                <label for="city">Città:</label>
+                <input type="text" name="user_city" id="city">
+                <label for="address">Indirizzo:</label>
+                <input type="text" name="user_address" id="address">           
+                <label for="street">Via:</label>
+                <input type="text" name="user_street" id="street">          
+                <label for="number">Numero Civico:</label>
+                <input type="text" name="user_address" id="address">     
+        
+        </section>
+
+		<section>
+			<button type="submit">Registrati</button>
+		</section>
+
+    </form>
+
+</body>
+
+</html>
