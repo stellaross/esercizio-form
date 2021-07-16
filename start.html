@@ -19,8 +19,7 @@
     <form action="form.php" method="POST">
         <h1>Pagamento</h1>
         <h2>Informazioni di contatto</h2>
-        <section>
-          
+        <section>          
                 <label for="email">Email:</label>
                 <input type="email" name="user_email" id="email">           
                 <label for="password">Password:</label>
@@ -30,12 +29,10 @@
                 <label for="birth">Data di nascita:</label>
                 <input type="date" name="user_birth" id="birth">           
                 <label for="telephone">Numero di telefono:</label>
-                <input type="tel" name="user_telephone_number" id="telephone">
-       
+                <input type="tel" name="user_telephone_number" id="telephone">       
         </section> 
 
-        <section>
-           
+        <section>           
                 <h2>Piano dell'offerta</h2>
                 <select name="offers" id="offer_plan">
                     <optgroup label="Free">
@@ -49,13 +46,11 @@
                 </select>
          
                 <input type="checkbox" name="piano_pro" id="piano_pro">
-                <label for="piano_pro">Piano Pro</label>
-          
+                <label for="piano_pro">Piano Pro</label>          
         </section>  
         
         <section>
-            <h2>Informazioni di pagamento</h2>
-           
+            <h2>Informazioni di pagamento</h2>           
                 <label for="number_credit_card">Numero Carta</label>
                 <input type="text" name="credit_card" id="number_credit_card">           
                 <label for="cvc">CVC</label>
@@ -63,7 +58,6 @@
                 <label for="expire_date">Data scadenza:</label>
                 <input type="date" name="expire_date_card" id="expire_date">        
         </section> 
-
         <section>
             <h2>Indirizzo di fatturazione</h2>
         
@@ -74,13 +68,12 @@
                 <label for="street">Via:</label>
                 <input type="text" name="user_street" id="street">          
                 <label for="number">Numero Civico:</label>
-                <input type="text" name="user_address" id="address">     
+                <input type="text" name="user_address" id="address">  
         
-        </section>
-
-		<section>
-			<button type="submit">Registrati</button>
-		</section>
+         </section>
+         <section>
+	        <button type="submit">Registrati</button>
+          </section>
 
     </form>
 
